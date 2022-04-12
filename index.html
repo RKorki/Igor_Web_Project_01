@@ -1,0 +1,127 @@
+<html>
+<head>
+	<meta charset=UTF-8/>
+	<title>Strona Igora</title>
+	<link rel="stylesheet" href="style/reset.css"/>
+	<link rel="stylesheet" href="style/style.css"/>
+</head>
+<body>
+
+<div id="divZKotem" >
+	<p>Moja pierwsza strona internetowa</p>
+	<h1>Nagłówek Pierwszy</h1>
+	<h2 class="firstClass">Nagłówek Drugi</h2>
+	<h3 class="firstClass">Nagłówek Trzeci</h3>
+	ala
+	</br>
+	miala
+	</br>
+	kota
+	</br>
+
+	<a href ="https://www.wp.pl/" target = "_blank">Moj pierwszy link</a>
+	</br>
+</div>
+<!--   -->
+<!-- *  -->
+<!-- ?  -->
+<!-- !  -->
+<!-- TODO  -->
+<!-- @param -->
+<ul!
+<ulTODO
+<ul>
+<li>Pierwszy</li>
+<li>Drugi</li>
+<li>Trzeci</li>
+</ul>
+
+<ol>
+<li>Pierwszy</li>
+<li>Drugi</li>
+<li>Trzeci</li>
+</ol>
+
+
+<table>
+<tr>
+<th>Col 1</th>
+<th>Col 2</th>
+<th>COl 3</th>
+</tr>
+<tr>
+<td>1</td>
+<td colspan="2">2</td>
+</tr>
+<tr>
+<td rowspan="2">4</td>
+<td>5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>8</td>
+<td>9</td>
+</tr>
+</table>
+
+<!-- 
+scalanie column atrybut colspan
+scalanie wierszy atrybut rowspan
+
+CRUD -> CREAT READ UPDATE DELETE
+HTML ->  PUT  GET   POST  DELETE
+-->
+</br></br></br></br>
+<form action="" method="POST">
+<label for="imie">Podaj imię: </label>
+<input type="Text" id="imie"/>
+</br>
+<label for="nazwisko">Podaj nazwisko: </label>
+<input type="Text" id="nazwisko" placeholder = "Twoje nazwisko"/>
+<p>Płeć?</p>
+<input type="radio" name="plec" value="male" id = "male" />
+<label for="male">Mężczyzna</label>
+<input type="radio" name="plec" value="female" id = "female" checked/>
+<label for="female">Kobieta</label>
+</br>
+<p>Przedział wiekowy?</p>
+<input type="radio" name="age" id="zero-five" checked/>
+<label for="zero-five">0-5</label>
+</br>
+<input type="radio" name="age" id="five-ten"/>
+<label for="five-ten">5-10</label>
+</br>
+<input type="radio" name="age" id="ten-eighteen"/>
+<label for="ten-eighteen">10-18</label>
+</br></br>
+<label for="birthDate">Data twojego urodzenia</label>
+<input type="date"  id="birthDate" />
+</br>
+</br>
+<input type="checkbox" id="agree"/>
+<label for="agree">Czy wyrażasz zgodę marketingową</label>
+</br></br></br>
+<label for="cvFile">Wybierz plik z CV</label>
+</br>
+<input type="file" name="fileUpload"/>
+</br>
+</br>
+<p>Wybierz swoje miasto</p>
+<select name="city">
+<option value="val0"></option>
+<option value="val1">Katowice</option>
+<option value="val2">Kraków</option>
+<option value="val3">Warszawa</option>
+<option value="val4">Jaworzno</option>
+</select>
+</br>
+</br>
+<textarea cols="50" rows="10"  placeholder="Historia twojego zycia"></textarea>
+</br>
+</br>
+<input type="submit" value="Send"/>
+<button type="reset">Clear</button>
+</form>
+
+</body>
+</html>

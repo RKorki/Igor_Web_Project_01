@@ -1,0 +1,46 @@
+
+h1{
+	color:yellow;
+	font-size:200%;
+}
+h2{
+	font-size:175%;
+}
+
+h3{
+	font-size:125%;
+}
+
+body{
+	margin: 30px 15%;
+	font-size: 200%;
+}
+
+table,th,td{
+		border: 1px dotted black;
+}
+
+/*
+Przykladowy komentarz w css
+*/
+/*
+. - do klasy
+# - do id
+*/
+
+#divZKotem{	
+	background-color: black;
+	color:white;
+}
+
+.firstClass{
+	color:green;
+}
+
+ol, ul {
+	color: red;
+}
+
+h1,h2,h3{
+	font-weight: bold;
+}
