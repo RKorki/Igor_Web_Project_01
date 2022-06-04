@@ -17,12 +17,9 @@ bool czyPierwsza(int val){
 }
 
 
-int czyZPierszych(int val){
+int obliczPierwiastek(int val){
     int pierwiastek = (int) sqrt(val);
-    if(czyPierwsza(pierwiastek)){
-        return pierwiastek;
-    }
-    return 0;
+    return pierwiastek;
 }
 
 
@@ -31,19 +28,17 @@ int czyZPierszych(int val){
 int main(){
     int tab[5]={1838947883,1004098109,851260967,809509261,669266311};
     for(int i = 0; i < 5 ; i++){
-        int val = czyZPierszych(tab[i]);
-        if(val == 0){
-            cout<<tab[i]<<" nie sklada sie z liczb pierwszych "<<endl;
+        int squareRoot = obliczPierwiastek(tab[i]);
+        bool flag = czyPierwsza(squareRoot);
+        if(flag == false){
+            cout<<tab[i]<<" nie sklada sie z liczb pierwszych bo pierwiastek wynosi "
+            << squareRoot <<endl;
         }
         else{
-            cout<<tab[i]<<" sklada sie z liczb pierwszych bo pierwiastek = " << val<<endl;
+            cout<<tab[i]
+            <<" sklada sie z liczb pierwszych bo pierwiastek jest liczba pierwsza bo wynosi " 
+            << squareRoot <<endl;
         }
     }
     return 0;
 }
-
-
-
-
-
-
